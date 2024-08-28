@@ -1,5 +1,6 @@
 // frontend/src/App.js
 import React, { useEffect, useState } from "react";
+import "./App.css"; // CSS dosyasını import etme
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -29,7 +30,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Blog Posts</h1>
       <ul>
         {posts.map((post) => (
